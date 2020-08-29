@@ -1,0 +1,63 @@
+working directory --->stafing area--->commit
+
+
+git status-  The git status command displays the state of the working directory and the staging area. 
+
+git init - The git init command is used to create a new blank repository.
+
+git add . - to add all untracked files to staging
+
+git commit -m "apna commit message"
+
+git log - to see who make what changes
+
+git config --global user.name "apna username" -- to change username or set username (--gloabl because to apply all repository 
+                                                                  if you want for current directory only remove --global)
+
+git config --global user.email "apna email id" -- to change email or set email
+
+git remote add origin remote repository URL (add github repository in git)
+
+git push -u origin master -  to push in repository. (-u because if you wirte next time only git push it will add to master branch)
+
+git pull origin master --  to pull repo
+
+git diff filename --- to see diff after making changes 
+
+git diff --staged filename -> to see changes in staged file
+
+git reset filename ---> to unstaged a file if you don't want to commit 
+
+git checkout filename --> if you want to remove changes after making unstaged.
+
+git add -A --> stages All
+
+git add . --> stages new and modified, without deleted (new means new file)
+
+git add -u --> stages modified and deleted, without new
+
+git clone url --> to clone repo (use ssh url of that repo)
+
+git clone url  . --> to copy file not folders.
+
+touch filename ===-> is used to create blank file of mentioned filename
+
+vim/notepad filename ==> to open file.
+
+git branch ---> to shown all branches.
+
+git branch branchname--> tp create branch
+
+git checkout branchname ---> to switch to particular branch
+
+git push origin branchname --> to push particular branch
+
+how to merge one branch A to other branch B. 
+
+a.  first switch to branch B (git checkout B)
+b.  git merge A (it will merge A into B)
+
+to delete branch
+ git branch -d branchname ---(to remove from local)
+  
+ git push origin --delete branchname (to remove from github repository)
